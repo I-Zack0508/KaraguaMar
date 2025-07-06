@@ -1,0 +1,71 @@
+.colors {
+    color: #116D6E;
+    color: #1C3D3D;
+    color: #FFF6E9;
+    color: #FDBF60;
+}
+
+header {
+    background-color: #116D6E;
+    margin: 0px;
+    position: fixed;
+    width: 100%;
+    border-bottom-left-radius: 50px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.logo {
+    background-color: #1C3D3D;
+    padding: 7px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 13px;
+}
+
+.logo h1 {
+    color: #FFF6E9;
+    font-size: 20px;
+}
+
+.links ul {
+    background-color: #1C3D3D;
+    display: flex;
+    list-style: none;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.links ul li {
+    margin: 10px;
+}
+
+.links ul li a {
+    color: #FFF6E9;
+    text-decoration: none;
+}
+
+.login_BTN button {
+    background-color: #1C3D3D;
+}
+
+.login_BTN button a {
+    color: #FFF6E9;
+}
+
+.user_logged {
+    background-color: #116D6E; /* verde style */
+    color: #FFF6E9;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+  }

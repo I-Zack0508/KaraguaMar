@@ -1,0 +1,166 @@
+.colors {
+    color: #116D6E;
+    color: #1C3D3D;
+    color: #FFF6E9;
+    color: #FDBF60;
+}
+
+.banner {
+    box-shadow: -1px 2px 90px -14px rgba(0,0,0,0.75);
+    background-image: url(/IMG/Prainha-bg.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card_dad {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.little-about-container {
+    margin: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about_card {
+    background-color: #1C3D3D;
+    padding: 20px;
+    color: #FFF6E9;
+    border-radius: 25px;
+
+    flex: 1 1 300px;
+    max-width: 500px;
+    min-width: 250px;
+    box-sizing: border-box;
+}
+
+.about_card button{
+    background-color: #116D6E;
+}
+
+.about_card button a{
+    color: #ffffff;
+}
+
+.card_variant1 {
+    background-color: #116D6E;
+}
+
+.card_variant2 {
+    background-color: #FDBF60;
+    color: #1C3D3D;
+}
+
+
+
+.recomend {
+    box-shadow: -1px 2px 90px -14px rgba(0,0,0,0.75);
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 60px;
+    box-sizing: border-box;
+    background-color: #116D6E;
+}
+
+.recomend_mask {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.recomend_roll {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+    width: max-content;
+}
+
+.card_praia {
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 300px;
+    height: 410px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-right: 40px;
+}
+
+.card_praia:hover {
+    transform: scale(1.03);
+}
+
+.card_praia img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 300px;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card_praia_content {
+    margin: 10px;
+}
+
+.card_praia_content h1 {
+    margin-bottom: 0px;
+}
+
+.card_praia_content p {
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.card_praia_content button {
+    background-color: #116D6E;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card_praia_content a {
+    color: #FFF6E9;
+    font-size: 15px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #1C3D3D;
+    color: #FFF6E9;
+    border: none;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 99;
+    border-radius: 0;
+    height: 100%;
+    opacity: 0.25;
+    transition: ease 0.5s opacity;
+}
+
+.arrow:hover{
+    opacity: 1;
+}
+
+.arrow.left {
+    left: 0;
+}
+
+.arrow.right {
+    right: 0;
+}

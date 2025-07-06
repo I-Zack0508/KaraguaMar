@@ -1,0 +1,10 @@
+-- CreateTable
+CREATE TABLE "DocumentoGuia" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "cep" TEXT NOT NULL,
+    "cpf" TEXT NOT NULL,
+    "arquivos" JSONB NOT NULL,
+    "userId" INTEGER NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT "DocumentoGuia_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User" ("id") ON DELETE RESTRICT ON UPDATE CASCADE
+);

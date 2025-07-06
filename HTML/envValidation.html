@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de validação</title>
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/envValidation.css">
+    <link rel="stylesheet" href="/CSS/global.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>KaraguáMar</h1>
+            </div>
+
+            <div class="links">
+                <ul id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="praias.html">Praias</a></li>
+                    <!-- aqui os links extras vão aparecer dinamicamente -->
+                </ul>
+            </div>
+
+            <div class="login_BTN" id="authArea">
+                <button>
+                    <a href="login.html">Login</a>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="formularioEnv">
+        <h2>Envie seus dados para se tornar Guia</h2>
+  
+        <form id="form-upload">
+          <label>
+            CPF: <br />
+            <input type="text" name="cpf" required placeholder="123.456.789-00" />
+          </label><br /><br />
+          
+          <label>
+            CEP: <br />
+            <input type="text" name="cep" required placeholder="11660-000" />
+          </label><br /><br />
+          
+          <label>
+            Documento: <br />
+            <input type="file" name="arquivo" required />
+          </label><br /><br />
+          
+          <!-- Coloque o userId aqui (exemplo hardcoded 1) -->
+          <input type="hidden" name="userId" value="1" />
+          
+          <button type="submit">Enviar Documento</button>
+        </form>
+
+    </div>
+
+    <div id="resultado"></div>
+
+
+    <script src="/JS/guiaDoc.js"></script>
+    <script src="/JS/HeaderVerification.js"></script>
+</body>
+
+</html>

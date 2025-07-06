@@ -1,0 +1,141 @@
+.colors {
+    color: #116D6E;
+    color: #1C3D3D;
+    color: #FFF6E9;
+    color: #FDBF60;
+}
+
+.login_container {
+    background-color: #116D6E;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bnner_login {
+    background-image: url(/IMG/login-banner.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 50%;
+}
+
+.login_area {
+    background-color: #116D6E;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 1137px) {
+    .login_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .bnner_login {
+        width: 100%;
+    }
+
+    .login_area {
+        width: 100%;
+        height: 130vh;
+    }
+}
+
+.login_form {
+    background-color: #116D6E;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.login_form form {
+    background-color: #116D6E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    margin: 13px 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #FFF6E9;
+    color: black;
+    width: 90%;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    margin-top: 25px;
+}
+
+.login_form h1 {
+    color: #FFF6E9;
+    text-transform: uppercase;
+}
+
+.login_form p {
+    color: #FFF6E9;
+    margin: 25px;
+}
+
+.login_form a {
+    color: #FDBF60;
+    text-decoration: none;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+    margin: 13px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    box-sizing: border-box;
+    height: 45px;
+}
+
+.password-container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    background: transparent;
+}
+
+.toggle-visibility {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-visibility img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+}

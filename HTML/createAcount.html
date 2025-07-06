@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/createAcount.css">
+    <title>Criar Conta</title>
+</head>
+
+<body>
+
+    <div class="login_container">
+
+        <div class="bnner_login">
+
+        </div>
+
+        <div class="login_area">
+            <div class="login_form">
+                <h1>Crie sua conta</h1>
+                <form id="cadastroForm" action="">
+                    <input type="text" id="name" placeholder="Nome Completo">
+
+                    <input type="email" id="email" placeholder="Email">
+
+                    <div class="password-container">
+                        <input type="password" id="senha" placeholder="Senha">
+                        <span class="toggle-visibility" onclick="togglePassword('senha', 'eyeIcon1')">
+                            <img src="/IMG/eye-icon.png" id="eyeIcon1" alt="Mostrar senha">
+                        </span>
+                    </div>
+
+                    <div class="password-container">
+                        <input type="password" id="confirmaSenha" placeholder="Confirmar Senha">
+                        <span class="toggle-visibility" onclick="togglePassword('confirmaSenha', 'eyeIcon2')">
+                            <img src="/IMG/eye-icon.png" id="eyeIcon2" alt="Mostrar senha">
+                        </span>
+                    </div>
+
+                    <input type="date" id="dataNasc" placeholder="Data de Nascimento" max="">
+
+                    <button type="submit">Criar conta</button>
+                </form>
+                <p>Já possui uma conta? <a href="login.html">Faça login já!</a></p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="/JS/CreateAcount.js"></script>
+    <script src="/JS/viewPassword.js"></script>
+</body>
+
+</html>
