@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/perfil.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>KaraguáMar</h1>
+            </div>
+
+            <div class="links">
+                <ul id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="praias.html">Praias</a></li>
+                    <!-- aqui os links extras vão aparecer dinamicamente -->
+                </ul>
+            </div>
+
+            <div class="login_BTN" id="authArea">
+                <button>
+                    <a href="login.html">Login</a>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="perfil_card">
+        <div>
+            <p>Nome: <span id="user-name"></span></p>
+            <button onclick="openModal('name')">Editar</button>
+
+            <p>Email: <span id="user-email"></span></p>
+            <button onclick="openModal('email')">Editar</button>
+
+            <p>Senha: ********</p>
+            <button onclick="openModal('password')">Editar</button>
+
+            <p>Data de Nascimento: <span id="user-dob"></span></p>
+            <button onclick="openModal('dob')">Editar</button>
+
+            <!-- Botão de Logout -->
+            <button id="logout-btn" style="margin-top: 20px; background-color: #e74c3c; color: white; padding: 10px; border: none; cursor: pointer;">
+                Logout
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal para edição -->
+    <div id="edit-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Editar Dados</h2>
+            <form id="edit-form">
+                <label for="edit-input">Novo Valor:</label>
+                <input type="text" id="edit-input" />
+                <button type="submit">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/JS/HeaderVerification.js"></script>
+    <script src="/JS/perfil.js"></script>
+</body>
+</html>

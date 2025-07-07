@@ -1,6 +1,32 @@
+.colors {
+    color: #116D6E;
+    color: #1C3D3D;
+    color: #FFF6E9;
+    color: #FDBF60;
+}
+
 .formularioEnv{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #116D6E;
+    padding: 20px;
+    border-radius: 15px;
+    color: #FFF6E9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_arq{
+    background-color: #116D6E;
+}
+
+.button{
+    background-color: #FFF6E9;
+    color: black;
+    cursor: pointer;
+    cursor: pointer;
 }

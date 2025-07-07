@@ -73,4 +73,55 @@ const login = async (req, res) => {
   }
 };
 
-module.exports = { register, login };
+const getUsers = async (req, res) => {
+  try {
+    const users = await prisma.user.findMany({
+      select: {
+        id: true,
+        name: true,
+        email: true,
+        isAdmin: true,
+        isGuia: true,
+      },
+    });
+
+    res.json(users);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Erro ao buscar usuários." });
+  }
+};
+
+const editarUsuario = async (req, res) => {
+  const { id } = req.params; // ID do usuário
+  const { name, email, password, dob } = req.body; // Dados enviados para atualização
+
+  try {
+    // Busca o usuário pelo ID
+    const user = await prisma.user.findUnique({
+      where: { id: parseInt(id) },
+    });
+
+    if (!user) {
+      return res.status(404).json({ error: "Usuário não encontrado." });
+    }
+
+    // Atualiza os campos fornecidos
+    const updatedUser = await prisma.user.update({
+      where: { id: parseInt(id) },
+      data: {
+        name: name || user.name, // Atualiza o nome se fornecido
+        email: email || user.email, // Atualiza o email se fornecido
+        password: password ? await bcrypt.hash(password, 10) : user.password, // Atualiza a senha se fornecida
+        dob: dob || user.dob, // Atualiza a data de nascimento se fornecida
+      },
+    });
+
+    res.json({ message: "Usuário atualizado com sucesso.", user: updatedUser });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Erro ao atualizar usuário." });
+  }
+};
+
+module.exports = { register, login, getUsers, editarUsuario };
