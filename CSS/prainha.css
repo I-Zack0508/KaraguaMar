@@ -1,0 +1,118 @@
+.banner {
+    background-image: url(/IMG/Prainha-bg.jpg);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    box-shadow: none;
+}
+
+.banner_info {
+    color: #fff;
+    margin-left: 10%;
+    text-transform: uppercase;
+}
+
+.prainha-info {
+  padding: 40px;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+
+.textos {
+  flex: 1 1 50%;
+}
+
+.textos h1 {
+  font-size: 2.5rem;
+}
+
+.textos .sub {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.avaliacao {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.stars {
+  color: #fbbc04;
+  margin: 0 8px;
+}
+
+.descricao {
+  color: #333;
+}
+
+.imagem {
+  flex: 1 1 40%;
+}
+
+.imagem img {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.galeria {
+  background-color: #0e4035;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.galeria h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.fotos {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fotos img {
+  width: 250px;
+  height: 170px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.avaliacoes {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.avaliacoes h2 {
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.card h3 {
+  color: #0e4035;
+  margin-bottom: 10px;
+}

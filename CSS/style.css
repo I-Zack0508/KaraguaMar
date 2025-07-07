@@ -115,6 +115,8 @@
 
 .card_praia_content h1 {
     margin-bottom: 0px;
+    font-size: 25px;
+    text-transform: uppercase;
 }
 
 .card_praia_content p {

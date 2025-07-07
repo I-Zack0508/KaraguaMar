@@ -1,0 +1,101 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.banner {
+    background-image: url(/IMG//banner_prainha2.jfif);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.banner_info {
+    color: #fff;
+    margin-left: 10%;
+    text-transform: uppercase;
+}
+
+.intro_section{
+    margin: 100px;
+}
+
+.intro_section h1{
+    text-transform: uppercase;
+}
+
+.card_praia {
+  box-shadow: 1px -1px 16px 0px rgba(0,0,0,0.75);
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 450px;
+    height: 410px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.card_praia:hover {
+    transform: scale(1.03);
+}
+
+.card_praia img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 450px;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card_praia_content {
+    margin: 10px;
+}
+
+.card_praia_content h1 {
+    margin-bottom: 0px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.card_praia_content p {
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.card_praia_content button {
+    background-color: #116D6E;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card_praia_content a {
+    color: #FFF6E9;
+    font-size: 15px;
+}
+
+.cards_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0px;
+    /* diminui o espaçamento horizontal */
+    row-gap: 60px;
+    /* mantém o espaçamento vertical */
+    justify-items: center;
+    margin: 40px 0;
+}
+
+/* 2 por linha em telas médias */
+@media (max-width: 1100px) {
+    .cards_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 1 por linha em telas pequenas */
+@media (max-width: 700px) {
+    .cards_container {
+        grid-template-columns: 1fr;
+    }
+}

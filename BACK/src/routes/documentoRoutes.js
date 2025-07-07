@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const upload = require('../middleware/upload');
-const { enviarDocumento, listarPendentes, aprovarGuia } = require('../controllers/documentoController');
+const { enviarDocumento, listarPendentes, aprovarGuia, rejeitarGuia } = require('../controllers/documentoController');
 
 router.patch('/rejeitar/:id', rejeitarGuia);
 

@@ -12,6 +12,7 @@ header {
     width: 100%;
     border-bottom-left-radius: 50px;
     top: 0px;
+    z-index: 100;
 }
 
 

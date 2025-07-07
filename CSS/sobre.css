@@ -1,0 +1,62 @@
+.colors {
+    color: #116D6E;
+    color: #1C3D3D;
+    color: #FFF6E9;
+    color: #FDBF60;
+}
+
+.banner {
+    background-image: url(https://www.kleberpatricio.com.br/wp-content/uploads/2023/01/Praia-do-Capricornio-1--scaled.jpg);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    box-shadow: none;
+}
+
+.banner_info {
+    color: #fff;
+    margin-left: 10%;
+    text-transform: uppercase;
+}
+
+.about_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 90px;
+}
+
+.about{
+    background: #116D6E;
+    color: #FFF6E9;
+    width: 600px;
+    height: 100%;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.contribuidores_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #116D6E;
+}
+
+.contribuidores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+
+.contribuidores img{
+    height: 200px;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.pessoa{
+    margin: 35px;
+    color: #FFF6E9;
+}
